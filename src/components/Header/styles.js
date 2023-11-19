@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+
 	grid-area: header;
 
 	width: 100%;
-	height: 6.563 rem;
+	height: 6.563rem;
 
 	display: flex;
 	align-items: center;
