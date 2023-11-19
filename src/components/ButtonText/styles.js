@@ -8,5 +8,8 @@ border: none;
 color: ${({ theme }) => theme.COLORS.ORANGE};
 font-size: 16px;
 
+display: flex;
+align-self: self-end;
+
 
 `;
