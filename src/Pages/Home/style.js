@@ -38,7 +38,6 @@ export const Brand = styled.div`
 
 export const Menu = styled.div`
 	grid-area: menu;
-
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -89,11 +88,45 @@ export const NewNote = styled.button`
 	}
 `;
 
-export const Search = styled.div``;
+export const Search = styled.div`
+	background: none;
+`;
 
 export const Content = styled.div`
-
 	grid-area: content;
 
-	background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+	display: flex;
+	flex-direction: column;
+
+	padding: 4rem;
+
+	> Input {
+		margin-bottom: 36px;
+	}
+
+	> Section {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	> Section > div {
+		width: 100%;
+		height: 112px;
+
+		padding: 16px 22px;
+		border-radius: 10px;
+
+		background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+
+		> h2 {
+			font-size: 24px;
+			font-weight: 700;
+			color: ${({ theme }) => theme.COLORS.WHITE};
+
+			padding-bottom: 24px;
+		}
+	}
 `;
+
+
