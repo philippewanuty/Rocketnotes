@@ -1,32 +1,35 @@
-import { Container, CoverImage, Login } from './styles';
+import { Container, CoverImage, ImageCover, LoginSection, Login, LoginText, LoginInput } from './styles';
 
 import { ButtonText } from '../../components/ButtonText';
 import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
-import  CoverImg  from '../../Assets/CoverImg.jpg';
+import { FiMail, FiLock } from 'react-icons/fi';
 
-
+import CoverImg from '../../Assets/CoverImg.jpg';
 
 export function SignIn() {
-  return (
-			<Container>
+	return (
+		<Container>
+			<LoginSection>
+				<LoginText>
+					<h1>Rocket Notes</h1>
+					<span>Aplicação para salvar e gerenciar seus links úteis.</span>
+				</LoginText>
 				<Login>
-					<div>
-						<h1>Rocket Notes</h1>
-						<span>Aplicação para salvar e gerenciar seus links úteis.</span>
-						<ButtonText title='Faça seu login' />
-					</div>
-					<div>
-						<Input />
-						<Input />
-						<Button title='Entrar' />
-						<ButtonText title='Criar conta' />
-					</div>
+					<ButtonText title='Faça seu login' />
+					<LoginInput>
+						<Input icon={FiMail} placeholder='E-mail' />
+						<Input icon={FiLock} placeholder='Senha' />
+					</LoginInput>
+					<Button title='Entrar' />
+					<ButtonText title='Criar conta' />
 				</Login>
+			</LoginSection>
 
-				<CoverImage>
-					<img src={CoverImg} alt='' />
-				</CoverImage>
-			</Container>
-		);
-};
+			<CoverImage>
+				<ImageCover />
+				<img src={CoverImg} alt='' />
+			</CoverImage>
+		</Container>
+	);
+}
