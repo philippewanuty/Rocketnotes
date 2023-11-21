@@ -1,11 +1,12 @@
-import { Container } from './style';
-import { RiAddFill } from 'react-icons/ri';
+import { Container } from './styles';
 
 
-export function Input({ placeholder}) {
+
+export function Input({ icon: Icon, ...rest}) {
   return (
-			<Container type='text' id='textInput' placeholder={placeholder}>
-		
+			<Container >
+				{Icon && <Icon size={20}/>}
+				<input {...rest}/>
 			</Container>
 		);
 };

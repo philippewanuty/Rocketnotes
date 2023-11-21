@@ -1,59 +1,66 @@
-import { Container, Brand, Menu, NewNote, Search, Content, MenuButtons } from './style';
+import { Container, Brand, Menu, NewNote, Search, Content } from './styles';
 import { Header } from '../../components/Header';
-import { RiAddFill } from 'react-icons/ri';
+import { FiPlus } from 'react-icons/fi';
 import { Section } from '../../components/Section';
-import { Tag } from '../../components/Tag';
 import { Input } from '../../components/Input';
-
+import { ButtonText } from '../../components/ButtonText';
+import { Note } from '../../components/Note';
 
 export function Home() {
-  return (
-			<Container>
-				<Header title='Philippe Wanuty' />
+	return (
+		<Container>
+			<Header title='Philippe Wanuty' />
 
-				<Brand>
-					<span>Rocketnotes</span>
-				</Brand>
+			<Brand>
+				<h1>Rocketnotes</h1>
+			</Brand>
 
-				<Menu>
-					<MenuButtons>
-						<li>
-							<button type='button'>Todos</button>
-						</li>
-						<li>
-							<button type='button'>Frontend</button>
-						</li>
-						<li>
-							<button type='button'>Node</button>
-						</li>
-						<li>
-							<button type='button'>React</button>
-						</li>
-					</MenuButtons>
-				</Menu>
+			<Menu>
+				<li>
+					<ButtonText title='Todos' $isactive />
+				</li>
+				<li>
+					<ButtonText title='Frontend' />
+				</li>
+				<li>
+					<ButtonText title='Node' />
+				</li>
+				<li>
+					<ButtonText title='React' />
+				</li>
+			</Menu>
 
-				<NewNote type='button'>
-					<RiAddFill />
-					Criar nota
-				</NewNote>
+			<NewNote type='button'>
+				<FiPlus />
+				Criar nota
+			</NewNote>
 
-				<Content>
-					<Input placeholder='Digite o texto aqui' />
+			<Search>
+				<Input placeholder='Digite o texto aqui' />
+			</Search>
 
-					<Section title='Minhas notas'>
-						<div>
-							<h2>React modal</h2>
-							<Tag title='React' />
-						</div>
-
-						<div>
-							<h2>Exemplo de Middleware</h2>
-							<Tag title='Express' />
-							<Tag title='nodejs' />
-						</div>
-            
-					</Section>
-				</Content>
-			</Container>
-		);
-};
+			<Content>
+				<Section title='Minhas notas'>
+					<Note
+						data={{
+							title: 'React',
+							tags: [
+								{ id: '1', name: 'react' },
+							
+							],
+						}}
+					/>
+					<Note
+						data={{
+							title: 'Exemplo de Middleware',
+							tags: [
+								{ id: '1', name: 'Express' },
+								{ id: '2', name: 'nodejs' },
+							],
+						}}
+					/>
+				</Section>
+			</Content>
+		</Container>
+	);
+}
