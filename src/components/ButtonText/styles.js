@@ -8,5 +8,5 @@ export const Container = styled.button`
 	font-size: 16px;
 
 	display: flex;
-	align-self: self-end;
+	
 `;
