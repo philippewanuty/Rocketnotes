@@ -1,4 +1,4 @@
-import { Container, CoverImage, ImageCover, LoginSection, Login, LoginText, LoginInput } from './styles';
+import { Container, LoginSection, LoginText, Login, LoginInput, CoverImage, ImageCover } from './styles';
 
 import { ButtonText } from '../../components/ButtonText';
 import { Button } from '../../components/Button';
