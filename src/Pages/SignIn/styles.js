@@ -68,7 +68,7 @@ export const Login = styled.div`
 		font-weight: 400;
 		color: ${({ theme }) => theme.COLORS.ORANGE};
 
-		margin-top: 124px;
+		margin-top: 80px;
 	}
 `;
 
