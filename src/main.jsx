@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from './styles/global';
 
-import { SignUp } from './Pages/SignUp';
+// import { SignUp } from './Pages/SignUp';
 // import { SignIn } from './Pages/SignIn';
 // import { Details } from './Pages/Details/Details';
 // import { Home } from './Pages/Home';
+import { Perfil } from './Pages/Perfil';
 
 
 import theme from "./styles/theme"
+
 
 
 
@@ -23,7 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			{/* <Home /> */}
 			{/* <Details /> */}
 			{/* <SignIn /> */}
-			<SignUp />
+			{/* <SignUp /> */}
+			<Perfil/>
 		</ThemeProvider>
 	</React.StrictMode>
 );
