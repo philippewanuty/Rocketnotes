@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 		padding: 20px 16px;
 
-		color: ${({ theme }) => theme.COLORS.GRAY_300};
+		color: ${({ theme }) => theme.COLORS.WHITE};
 
 		&:placeholder {
 			color: ${({ theme }) => theme.COLORS.GRAY_300};
