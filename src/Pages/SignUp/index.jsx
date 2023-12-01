@@ -13,17 +13,17 @@ export function SignUp() {
 			<LoginSection>
 				<LoginText>
 					<h1>Rocket Notes</h1>
-					<span>Aplicação para salvar e gerenciar seus links úteis.</span>
+					<p>Aplicação para salvar e gerenciar seus links úteis.</p>
 				</LoginText>
 				<Login>
-					<ButtonText title='Faça seu login' />
+					<h2>Crie sua conta</h2>
 					<LoginInput>
 						<Input icon={FiUser} placeholder='E-mail' />
 						<Input icon={FiMail} placeholder='E-mail' />
 						<Input icon={FiLock} placeholder='Senha' />
 					</LoginInput>
-					<Button title='Entrar' />
-					<ButtonText title='Voltar para o login' />
+					<Button title='Cadastrar' />
+					<a href='#'>Voltar para o login</a>
 				</Login>
 			</LoginSection>
 
