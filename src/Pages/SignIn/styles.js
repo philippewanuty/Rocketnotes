@@ -38,21 +38,21 @@ export const LoginText = styled.div`
 		color: ${({ theme }) => theme.COLORS.ORANGE};
 	}
 
-	> span {
+	> p {
 		font-size: 14px;
 		color: ${({ theme }) => theme.COLORS.GRAY_100};
 		margin-bottom: 48px;
 	}
 `;
 
-export const Login = styled.div`
+export const Login = styled.form`
 	width: 340px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	> button:nth-child(1) {
+	> h2 {
 		font-size: 24px;
 		font-family: 500;
 		color: ${({ theme }) => theme.COLORS.WHITE};
@@ -63,7 +63,7 @@ export const Login = styled.div`
 		margin-top: 24px;
 	}
 
-	> button:nth-child(4) {
+	> a {
 		font-size: 16px;
 		font-weight: 400;
 		color: ${({ theme }) => theme.COLORS.ORANGE};

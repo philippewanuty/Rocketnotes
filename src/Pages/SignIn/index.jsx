@@ -13,16 +13,16 @@ export function SignIn() {
 			<LoginSection>
 				<LoginText>
 					<h1>Rocket Notes</h1>
-					<span>Aplicação para salvar e gerenciar seus links úteis.</span>
+					<p>Aplicação para salvar e gerenciar seus links úteis.</p>
 				</LoginText>
 				<Login>
-					<ButtonText title='Faça seu login' />
+					<h2>Faça seu login</h2>
 					<LoginInput>
-						<Input icon={FiMail} placeholder='E-mail' />
-						<Input icon={FiLock} placeholder='Senha' />
+						<Input icon={FiMail} placeholder='E-mail' type='text' />
+						<Input icon={FiLock} placeholder='Senha' type='password' />
 					</LoginInput>
 					<Button title='Entrar' />
-					<ButtonText title='Criar conta' />
+					<a href='#'>Criar conta</a>
 				</Login>
 			</LoginSection>
 
