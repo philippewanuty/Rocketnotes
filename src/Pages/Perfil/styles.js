@@ -89,7 +89,7 @@ export const Form = styled.form`
 
 export const InputGroup = styled.div`
 	width: 340px;
-	height: 100vh;
+	
 
 	display: flex;
 	flex-direction: column;
