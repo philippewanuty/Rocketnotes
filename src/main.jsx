@@ -7,8 +7,8 @@ import { SignUp } from './Pages/SignUp';
 // import { SignIn } from './Pages/SignIn';
 // import { Details } from './Pages/Details/Details';
 // import { Home } from './Pages/Home';
-import { Perfil } from './Pages/Perfil';
-// import { CreateNote } from './Pages/CreateNote';
+// import { Perfil } from './Pages/Perfil';
+import { CreateNote } from './Pages/CreateNote';
 
 
 import theme from "./styles/theme"
@@ -27,8 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 			{/* <Details /> */}
 			{/* <SignIn /> */}
 			{/* <SignUp /> */}
-			<Perfil/>
-			{/* <CreateNote/> */}
+			{/* <Perfil/> */}
+			<CreateNote/>
 		</ThemeProvider>
 	</React.StrictMode>
 );
