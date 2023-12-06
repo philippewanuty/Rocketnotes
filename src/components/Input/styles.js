@@ -13,6 +13,7 @@ export const Container = styled.div`
 
 	> input {
 		height: 56px;
+		width: 100%;
 		background: transparent;
 		border: none;
 
