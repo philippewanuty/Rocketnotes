@@ -1,72 +1,65 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-height: 100vh;
-  
+	height: 100vh;
+	width: 100%;
+
+	display: grid;
+	grid-template-rows: 105px auto;
+	grid-template-areas:
+		'header'
+		'content';
+
+	main {
+		grid-area: content;
+		overflow-y: auto;
+	}
 `;
-export const Content = styled.div`
-  width: 550px;
-  margin: 0 auto;
+export const Content = styled.form`
+	max-width: 550px;
+	margin: 38px auto;
 
-  > Section:nth-child(3) > div {
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
+	.titulo {
+		display: flex;
+		flex-direction: column;
+		gap: 19px;
 
-    > h2 {
-      margin-bottom: 0;
-    }
+		> h2 {
+			margin-bottom: 0;
+		}
+	}
 
-    > div:nth-child(2) {
-      border-style: dashed;
-      border-width: 2px;
-      border-color: ${({ theme }) => theme.COLORS.GRAY_300};
-      background-color: transparent;
-    }
-  }
+	.marcadores {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 
-  > Section:nth-child(4) > div {
-    display: flex;
-    flex-direction: row;
-    gap: 19px;
+		gap: 19px;
+	}
 
-    > h2 {
-      margin-bottom: 0;
-    }
+	> Button {
+		margin-top: 34px;
 
-    > div:nth-child(2) {
-      border-style: dashed;
-      border-width: 2px;
-      border-color: ${({ theme }) => theme.COLORS.GRAY_300};
-      background-color: transparent;
-    }
-  }
-
-  > Button {
-   margin-bottom: 98px;
-  }
+		
+	}
 `;
 
 export const TextHeader = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+	margin-top: 38px;
+	margin-bottom: 36px;
 
-margin-top: 38px;
-margin-bottom: 36px;
-  
+	> a {
+		font-size: 20px;
+		color: ${({ theme }) => theme.COLORS.GRAY_100};
+	}
 `;
 
 export const InputsNote = styled.div`
-display: flex;
-flex-direction: column;
-gap: 16px;
-  
-  > div:nth-child(2) {
-   height: 150px;
-
-   align-items: start;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 `;
-
