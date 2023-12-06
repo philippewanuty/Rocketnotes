@@ -1,7 +1,15 @@
-## create project
+## criar projeto
 
 npm create vite@latest 
 
-## install lib for css-in-JS
+## biblioteca para css-in-JS
 
 npm install styled-components 
+
+## biblioteca para rotas
+
+npm install react-router-dom
+
+## biblioteca para icones
+
+npm install react-icons
