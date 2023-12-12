@@ -6,7 +6,7 @@ export function Header({title}) {
 		<>
 			<Container>
 
-				<Profile>
+				<Profile to="/perfil">
 					<img src='http://github.com/philippewanuty.png' alt='avatar do usuário' />
 					<div>
 						<span>Bem-vindo,</span>

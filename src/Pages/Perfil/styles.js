@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 export const Container = styled.div`
 	display: grid;
 	grid-template-rows: 144px auto;
@@ -11,32 +13,27 @@ export const Container = styled.div`
 	background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
-
 export const Header = styled.div`
 	grid-area: header;
 
 	width: 100%;
 	background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-	
+
 	display: flex;
 	align-items: center;
 
 	padding-left: 144px;
-	`;
+`;
 
-	export const ArrowLeft = styled.a`
-	
-	
-		> svg {
-			font-size: 24px;
-			color: ${({ theme }) => theme.COLORS.GRAY_100};
-		}
-	`;
+export const ArrowLeft = styled(Link)`
+	> svg {
+		font-size: 24px;
+		color: ${({ theme }) => theme.COLORS.GRAY_100};
+	}
+`;
 
 export const Avatar = styled.div`
-
-margin-top: -93px;
-	
+	margin-top: -93px;
 
 	img {
 		border-radius: 50%;
@@ -58,7 +55,7 @@ export const ChangePhoto = styled.label`
 	align-items: center;
 	margin-top: -48px;
 	margin-left: 138px;
-	
+
 	cursor: pointer;
 
 	border-radius: 50%;
@@ -72,9 +69,7 @@ export const ChangePhoto = styled.label`
 	}
 
 	> input {
-
 		display: none;
-	
 	}
 `;
 
@@ -89,7 +84,6 @@ export const Form = styled.form`
 
 export const InputGroup = styled.div`
 	width: 340px;
-	
 
 	display: flex;
 	flex-direction: column;
@@ -100,5 +94,4 @@ export const InputGroup = styled.div`
 	> div:nth-child(2) {
 		margin-bottom: 16px;
 	}
-
 `;

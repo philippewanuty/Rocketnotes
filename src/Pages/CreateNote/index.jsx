@@ -1,5 +1,7 @@
 import { Container,TextHeader, InputsNote ,Content } from './styles';
 
+import { Link } from 'react-router-dom';
+
 import { TextArea } from '../../components/TextArea';
 import { NoteItem } from '../../components/NoteItem';
 import { Section } from './../../components/Section';
@@ -16,7 +18,7 @@ export function CreateNote() {
 						<Content>
 							<TextHeader>
 								<h1>Criar Notas</h1>
-								<a href='/'>Voltar</a>
+								<Link to="/">Voltar</Link>
 							</TextHeader>
 							<InputsNote>
 								<Input placeholder='Título' />

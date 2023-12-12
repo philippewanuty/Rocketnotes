@@ -11,16 +11,11 @@ export const Container = styled.div`
 		'content';
 
 	> main {
-		
 		grid-area: content;
 		overflow-y: auto;
 		padding: 64px 0;
-		
-	
 	}
 `;
-
-
 
 export const Content = styled.div`
 	max-width: 550px;
@@ -51,9 +46,7 @@ export const Content = styled.div`
 
 	> button:nth-last-child(1) {
 		margin-top: 129px;
-	
 	}
-	
 `;
 
 export const Links = styled.ul`

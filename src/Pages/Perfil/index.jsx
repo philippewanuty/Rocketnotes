@@ -9,7 +9,7 @@ export function Perfil() {
 	return (
 		<Container>
 			<Header>
-				<ArrowLeft href='http://www.google.com'>
+				<ArrowLeft to="/">
 					<FiArrowLeft />
 				</ArrowLeft>
 			</Header>
