@@ -19,9 +19,9 @@ export function SignUp() {
 				<Login>
 					<h2>Crie sua conta</h2>
 					<LoginInput>
-						<Input icon={FiUser} placeholder='E-mail' />
-						<Input icon={FiMail} placeholder='E-mail' />
-						<Input icon={FiLock} placeholder='Senha' />
+						<Input icon={FiUser} placeholder='Usuário' type='text'/>
+						<Input icon={FiMail} placeholder='E-mail' type='email' />
+						<Input icon={FiLock} placeholder='Senha' type='password' />
 					</LoginInput>
 					<Button title='Cadastrar' />
 					<Link to="/">Voltar para o login</Link>
