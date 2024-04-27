@@ -1,10 +1,12 @@
 import { Container, Brand, Menu, NewNote, Search, Content } from './styles';
-import { Header } from '../../components/Header';
-import { FiPlus } from 'react-icons/fi';
-import { Section } from '../../components/Section';
-import { Input } from '../../components/Input';
+
 import { ButtonText } from '../../components/ButtonText';
+import { Section } from '../../components/Section';
+import { Header } from '../../components/Header';
+import { Input } from '../../components/Input';
 import { Note } from '../../components/Note';
+
+import { FiPlus } from 'react-icons/fi';
 
 export function Home() {
 	return (
