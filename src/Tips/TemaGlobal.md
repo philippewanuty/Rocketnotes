@@ -50,6 +50,6 @@ seguindo o exemplo a baixo, referenciando o **theme** que foi importado.
       </React.StrictMode>
     );
 
-Logo após ele deverá incluir o edtilo global **GlobalStyles.**
+Logo após ele deverá incluir o estilo global **GlobalStyles.**
 
 finalizando assim a inclusão do tema global no projeto.
