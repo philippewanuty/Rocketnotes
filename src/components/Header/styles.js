@@ -48,7 +48,7 @@ export const Profile = styled(Link)`
 	}
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
 	background: none;
 	border: none;
 

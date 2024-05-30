@@ -42,4 +42,4 @@ export function CreateNote() {
 				</Container>
 			</>
 		);
-}; 
+}
