@@ -5,14 +5,18 @@ import { Perfil } from '../Pages/Perfil';
 import { CreateNote } from '../Pages/CreateNote';
 import { Details } from '../Pages/Details';
 import { SignIn } from '../Pages/SignIn';
-import { SignUp } from '../Pages/SignUp';
+import { SignUp } from '../pages/SignUp';
+// import Teste from '../Teste';
+
+
+
 
 export function AppRoutes() {
 	return (
 		<Routes>
 			<Route
 				path='/'
-				element={<Home />}
+				element={<SignIn />}
 			/>
 			<Route
 				path='/details/:id'
@@ -27,11 +31,11 @@ export function AppRoutes() {
 				element={<CreateNote />}
 			/>
 			<Route
-				path='/SignIn'
-				element={<SignIn />}
+				path='/home'
+				element={<Home />}
 			/>
 			<Route
-				path='/SignUp'
+				path='/register'
 				element={<SignUp />}
 			/>
 		</Routes>

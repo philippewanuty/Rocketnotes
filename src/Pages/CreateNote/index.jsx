@@ -18,7 +18,7 @@ export function CreateNote() {
 						<Content>
 							<TextHeader>
 								<h1>Criar Notas</h1>
-								<Link to="/">Voltar</Link>
+								<Link to="/home">Voltar</Link>
 							</TextHeader>
 							<InputsNote>
 								<Input placeholder='Título' />

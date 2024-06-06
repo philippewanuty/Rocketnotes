@@ -38,10 +38,20 @@ Deverá conter as cores do projeto como no exemplo a baixo
  
 **No arquivo Main:**
 
+Fazer as devidas importações.
+
 Deverá incluir a tag **ThemeProvider** logo após do React.StrictMode
 seguindo o exemplo a baixo, referenciando o **theme** que foi importado.
 
-    ReactDOM.createRoot(document.getElementById("root")).render(
+```javascript
+import theme from './styles/theme.js';
+import GlobalStyles from './styles/global';
+import { ThemeProvider } from 'styled-components';
+```
+
+```javascript 
+
+   ReactDOM.createRoot(document.getElementById("root")).render(
       <React.StrictMode>
         <ThemeProvider theme={theme}>
           <GlobalStyles/>
@@ -49,7 +59,7 @@ seguindo o exemplo a baixo, referenciando o **theme** que foi importado.
         </ThemeProvider>
       </React.StrictMode>
     );
-
+```
 Logo após ele deverá incluir o estilo global **GlobalStyles.**
 
 finalizando assim a inclusão do tema global no projeto.

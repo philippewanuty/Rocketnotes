@@ -14,7 +14,7 @@ export function Header({title}) {
 					</div>
 				</Profile>
 
-				<Button to="/SignUp">
+				<Button to="/">
 					<RiShutDownLine />
 				</Button>
 			</Container>

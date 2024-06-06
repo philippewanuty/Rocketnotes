@@ -9,7 +9,7 @@ export function Perfil() {
 	return (
 		<Container>
 			<Header>
-				<ArrowLeft to="/">
+				<ArrowLeft to="/home">
 					<FiArrowLeft />
 				</ArrowLeft>
 			</Header>
