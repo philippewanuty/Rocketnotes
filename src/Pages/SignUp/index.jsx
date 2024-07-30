@@ -2,7 +2,7 @@ import { Container, LoginSection, LoginText, Login, LoginInput, CoverImage, Imag
 
 import { api } from '../../services/api';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
@@ -15,6 +15,8 @@ export function SignUp() {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
+	const navigate = useNavigate();
+
 	function handleSignUp() {
 		if (!name || !email || !password) {
 			return alert('Preencha todos os campos!');
@@ -23,6 +25,7 @@ export function SignUp() {
 		api.post('/users', { name, email, password })
 			.then(() => {
 				alert('Usuário cadastrado com sucesso!');
+				navigate("/");
 			})
 			.catch((error) => {
 				if (error.response) {
